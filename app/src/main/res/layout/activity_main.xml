@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/surnameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surname:"
+        android:layout_below="@id/nameText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/surnameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number:"
+        android:layout_below="@id/surnameText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surnameText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email address:"
+        android:layout_below="@id/phoneText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Address:"
+        android:layout_below="@id/emailText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_below="@id/addressText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/readButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:layout_below="@id/addressText"
+        android:layout_toRightOf="@id/addButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_below="@id/addressText"
+        android:layout_toRightOf="@id/readButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@id/addButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_below="@id/addButton"
+        android:layout_toRightOf="@id/updateButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/TextId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addButton"
+        android:layout_toRightOf="@id/deleteButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+
+    <TextView
+        android:id="@+id/sortLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort by:"
+        android:layout_below="@id/updateButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/sortButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        android:layout_below="@id/updateButton"
+        android:layout_toRightOf="@id/sortLabel"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="170dp"/>
+
+    <RadioGroup
+        android:id="@+id/sortRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortLabel"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/nameRadio">
+
+        <RadioButton
+            android:id="@+id/nameRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+
+        <RadioButton
+            android:id="@+id/surnameRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surname"/>
+
+        <RadioButton
+            android:id="@+id/emailRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/photoCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortRadioGroup"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
